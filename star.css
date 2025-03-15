@@ -1,0 +1,65 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background: black;
+    overflow: hidden;
+}
+
+/* Starry background */
+.stars, .twinkling {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: navy;
+    z-index: -1;
+}
+
+.twinkling {
+    animation: twinkle 2s infinite alternate;
+    opacity: 0.6;
+}
+
+/* Twinkling effect */
+@keyframes twinkle {
+    0% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+/* Page content */
+header {
+    padding: 50px;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    margin-top: 50px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #ff9900;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
